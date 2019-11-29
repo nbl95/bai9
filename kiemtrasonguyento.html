@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so nguyen to</title>
+</head>
+<body>
+<script>
+    const x = prompt("enter x");
+    let isPrime = true;
+    if (x < 2) {
+        console.log("not prime number");
+    } else {
+        for(let i = 2; i < x; i++) {
+            if(x % 1 === 0) {
+                isPrime = false
+                break;
+            }
+        }
+    }
+    if (isPrime) {
+        alert("prime number");
+    } else{
+        alert("not prime number");
+    }
+
+</script>
+</body>
+</html>
