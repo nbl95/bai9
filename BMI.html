@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>kiemtraBMI</title>
 </head>
 <body>
-$END$
+<script>
+    let x = prompt("Enter your weight (kg)")
+    let y = prompt("enter your height(cm)")
+    Y=y*0.01
+    BMI = x/(Y*Y)
+   alert(BMI)
+    if (BMI < 16)
+    {
+       alert("Severely underweight")
+    }
+    else if(BMI <=18.5){
+        alert("Underweight")
+    }
+    else if(BMI<= 25){
+        alert("Normal")
+    }
+    else if(BMI <= 30){
+        alert("Overweight")}
+    else {
+        alert("Obese")
+    }
+
+
+</script>
 </body>
 </html>
