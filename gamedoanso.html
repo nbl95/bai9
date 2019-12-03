@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gamedoanso</title>
+</head>
+<body>
+<input type="button" id="button1" value="Chơi/Chơi Lại" onclick="guessnumber()">
+<script>
+   function guessnumber() {
+       let low = parseInt(prompt("nhập số bạn muốn bắt đầu"));
+       let high = parseInt(prompt("nhập số bạn muốn kết thúc"));
+       for(;;){
+           let mid  = Math.floor(Math.random() * (high - low) + low);
+           console.log(mid);
+           let answer = parseInt(prompt("Nhap so muon chon"));
+           if (answer == mid) {
+               alert("ban da doan dung");
+           }else {
+               alert("ban da doan sai");
+           }
+       }while (answer !== mid) ;
+
+
+
+   }
+</script>
+</body>
+</html>
